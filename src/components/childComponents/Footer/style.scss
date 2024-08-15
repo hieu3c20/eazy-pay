@@ -1,0 +1,30 @@
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 80%;
+  text-align: center;
+  margin-left: 10%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 0 10px;
+  border: 0.1rem solid var(--secondary-color);
+  box-shadow: 10px 10px 10px 4px rgba(0, 0, 0, 0.086);
+
+  .footer-content {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  span {
+    font-size: 1.8rem;
+    font-weight: 200;
+    text-align: center;
+  }
+
+  .footer_image {
+    display: block;
+    width: 70px;
+  }
+}

@@ -1,0 +1,81 @@
+.graph {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  border-bottom: 1px solid var(--grey-color);
+  height: 200px;
+
+  .text_bar {
+    font-size: 9px;
+  }
+
+  .relative_bar {
+    bottom: -5px;
+    left: 40px;
+    height: 100px;
+    width: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 5px 15px 5px 15px;
+    background-color: var(--primary-color);
+    position: absolute;
+
+    .balance_bar {
+      position: absolute;
+      top: -12px;
+      width: 30px;
+      height: 20px;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      background-color: var(--darker-primary-color);
+
+      .balance {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+
+      .total_income_text {
+        position: absolute;
+        top: -20px;
+        left: -10px;
+        width: 90px;
+      }
+
+      .balance_text {
+        position: absolute;
+        top: 35px;
+        left: -50px;
+      }
+    }
+  }
+
+  .total_expenses_bar {
+    position: absolute;
+    bottom: -5px;
+    left: 120px;
+
+    .total_expenses {
+      height: 80px;
+      width: 30px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      margin: 5px 15px 5px 15px;
+      background-color: var(--secondary-color);
+    }
+  }
+
+  .total_savings_bar {
+    position: absolute;
+    bottom: -5px;
+    left: 200px;
+
+    .total_savings {
+      height: 80px;
+      width: 30px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      margin: 5px 15px 5px 15px;
+      background-color: var(--secondary-color);
+    }
+  }
+}

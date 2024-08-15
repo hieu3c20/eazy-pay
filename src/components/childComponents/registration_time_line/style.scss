@@ -1,0 +1,27 @@
+.registration-timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.8rem;
+
+  .registration-specification {
+    font-size: 1.8rem;
+  }
+
+  .registration-step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #eaeaea;
+    font-weight: 400;
+  }
+
+  .registration-step.active {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+}

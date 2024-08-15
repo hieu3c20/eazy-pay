@@ -1,0 +1,99 @@
+.ViewTransaction {
+  max-width: 1200px;
+  margin: 0 auto;
+  // background: red;
+  padding: 25px;
+
+  .search-and-filter-container {
+    width: 80%;
+    margin: 0 auto;
+    cursor: pointer;
+
+    .search-box {
+      display: flex;
+      gap: 10px;
+      background: white;
+      align-items: center;
+      padding: 15px 15px;
+      border-radius: 30px;
+      border: 1px solid black;
+
+      input {
+        width: 100%;
+        box-sizing: border-box;
+        // font-family: 'Oswald', sans-serif;
+        background: transparent;
+        border: 0;
+        font-size: 14px;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      i {
+        font-size: 18px;
+      }
+
+      .remove-text-btn {
+        font-size: 18px;
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &:hover {
+          background: var(--primary-color);
+          color: white;
+        }
+      }
+    }
+
+    .filter-box {
+      display: flex;
+      width: 60%;
+      gap: 20px;
+      margin-top: 20px;
+
+      .filter-item {
+        font-size: 10px;
+        padding: 5px 10px;
+        border-radius: 20px;
+        border: 0.5px solid var(--darker-primary-color);
+        color: var(--darker-primary-color);
+        cursor: pointer;
+      }
+
+      .filter-item-selected {
+        background: lightgreen;
+        color: black;
+        border: 0.5px solid lightgreen;
+
+      }
+    }
+
+  }
+
+  .transaction-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .status-text {
+      font-size: 14px;
+      font-family: 'Oswald', sans-serif;
+    }
+
+    .transaction-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+}

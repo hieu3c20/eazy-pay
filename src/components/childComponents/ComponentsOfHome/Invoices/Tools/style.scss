@@ -1,0 +1,19 @@
+.tools_header {
+  display: flex;
+}
+
+.currency_converter {
+
+  display: flex;
+  
+
+  .currency_from {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .currency_to {
+    display: flex;
+    flex-direction: column;
+  }
+}

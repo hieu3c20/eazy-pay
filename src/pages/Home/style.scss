@@ -1,0 +1,162 @@
+.text-input {
+    margin-left: var(--gap-of-navbar);
+    padding: 40px;
+    width: 100%;
+}
+
+.Home {
+    display: grid;
+    grid-template-columns: 48.5% 48.5%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 25px;
+    gap: 3%;
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-left: var(--gap-of-navbar);
+
+        .info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .info-icon {
+                font-size: 20px;
+            }
+
+            .message {
+                .message-title {
+                    font-family: 'Oswald', sans-serif;
+                    font-size: 20px;
+                }
+
+                .message_body {
+                    display: flex;
+                    padding: 10px;
+                }
+            }
+        }
+
+        .balance-box {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            border-bottom: 1px solid var(--grey-color);
+            background-color: var(--primary-color);
+            
+            .header_card {
+                display: flex;
+                justify-content: space-between;
+
+                .title {
+                    font-family: 'Oswald', sans-serif;
+                    font-size: 35px;
+                    color: var(--white-text-only);
+                }
+    
+                .child_logo {
+                    font-size: 35px;
+                 
+    
+                     .eazy {
+                        color: #B0B0B0;
+                    }
+        
+                     .pay {
+                        color: var(--white-text-only);
+                    }
+        
+                }
+            }
+
+           
+
+           
+            .balance {
+                font-family: 'Oswald', sans-serif;
+                font-size: 35px;
+                color: var(--white-text-only);
+            }
+
+            .transfer-btn {
+                font-family: 'Oswald', sans-serif;
+                padding: 5px 15px;
+                background: var(--primary-color);
+                width: fit-content;
+                color: white;
+                border-radius: 30px;
+                cursor: pointer;
+                letter-spacing: 3px;
+            }
+
+            .bottom_card {
+                display: flex;
+                justify-content: space-between;
+
+                .card_logo {
+                    width: 50px;
+                }
+            }
+
+        }
+
+        .recent-activity-box {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            min-height: 550px;
+
+
+            .transaction-container {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    }
+
+    .right {
+        border-left: 1px solid var(--grey-color);
+
+        .contact-box {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .contact-container {
+                display: flex;
+                gap: 20px;
+                .Contact {
+                    width: fit-content;
+                    max-width: 80px;
+                    display: flex;
+                    flex-direction: column;
+                    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.109);
+                    border-radius: 10px;
+                    align-items: center;
+                    gap: 10px;
+                    padding: 10px 20px;
+                    cursor: pointer;
+
+                    .image {
+                        height: 45px;
+                        width: 45px;
+                        border-radius: 50%;
+                    }
+
+                    .name {
+                        font-family: 'Roboto', sans-serif;
+                        text-align: center;
+                    }
+
+                    &:hover {
+                        box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.179);
+
+                    }
+                }
+            }
+        }
+    }
+}

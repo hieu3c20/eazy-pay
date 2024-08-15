@@ -1,0 +1,76 @@
+.container_form {
+  .field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .field input {
+    outline: 1px solid var(--grey-color);
+    border-radius: 0.5rem;
+    height: 3rem;
+    width: 100%;
+    margin: 0.5rem 0;
+    border: none;
+    display: block;
+    padding-left: 10px;
+  }
+
+  .field input:focus,
+  .field:focus-within .field input {
+    border-color: var(--secondary-color);
+  }
+
+  .field-label {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .form-navigation {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+    .button {
+      background-color: var(--primary-color);
+      font-size: 1.4rem;
+      border-radius: 1rem;
+      text-transform: uppercase;
+    }
+
+    .button-back {
+      margin-right: 1rem;
+    }
+  
+    .button:hover,.btn:active {
+      background-color: var(--darker-primary-color);
+      letter-spacing: 0.01rem;
+    }
+  }
+}
+
+.error-message {
+  color: var(--error-color);
+  font-size: 1.3rem;
+  line-height: 3rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+
+  .error-message .show {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.countdown_specification {
+  font-size: 1.3rem;
+  margin: 1rem 0;
+}

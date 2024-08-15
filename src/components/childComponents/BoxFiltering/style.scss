@@ -1,0 +1,22 @@
+.filter-box {
+  display: flex;
+  width: 60%;
+  gap: 20px;
+  margin-top: 20px;
+
+  .filter-item {
+    font-size: 10px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 0.5px solid var(--darker-primary-color);
+    color: var(--darker-primary-color);
+    cursor: pointer;
+  }
+
+  .filter-item-selected {
+    background: lightgreen;
+    color: black;
+    border: 0.5px solid lightgreen;
+
+  }
+}

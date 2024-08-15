@@ -1,0 +1,30 @@
+.sub_navbar {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  text-decoration: none;
+  align-items: center;
+  height: 8rem;
+  border-bottom: 1px solid #ccc;
+
+  .sub_navbar-item {
+    margin: 0 10px;
+  }
+  
+  .sub_navbar-link {
+    color: var(--grey-color);
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: -1px;
+  }
+  
+  .sub_navbar-link:hover {
+    color: #555;
+    text-decoration: none;
+  }
+}
+
+

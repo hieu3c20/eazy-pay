@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@400;500;700&display=swap');
+
+// https://www.figma.com/file/xOEjrk4OteneOW08wuOtGn/EazyPay-Design?type=design&node-id=0-1&mode=design&t=4h3I9CPaxenFGGps-0
+
+:root {
+  /* --primary-color: rgb(225, 29, 29); */
+  --primary-color: #0E3C80;
+
+  --grey-color: #343a40;
+  --darker-primary-color: #099268;
+
+  --background-color: #d3f9d8;
+
+  --white-text-only: #e9ecef;
+
+  // cyan 3
+  --secondary-color: #66d9e8;
+  --secondary-color-darker: #15aabf;
+
+  --error-color: #f03e3e;
+
+  --gap-of-navbar: 200px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+html {
+  font-size: 60%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  color: var(--grey-color);
+}
+
+.container-card {
+  padding: 15px;
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.179);
+  border-radius: 10px;
+
+  .title {
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+  }
+}
+
+.logo-text {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--primary-color)
+}
+
+.container-title {
+  color: var(--grey-color);
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+// heading font size:  font-size: 2.5rem; 
+// secondary heading font size: font-size: 2rem;
+// paragraph font size: font-size: 1.5rem;
